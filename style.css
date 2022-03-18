@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Oswald:wght@300;400;600&family=Roboto:wght@900&display=swap");
 /*
 font-family: 'Oswald', sans-serif; -Titulos
 font-family: 'Merriweather', serif; -Párrafos
@@ -47,7 +47,7 @@ header {
 main {
   padding: 0 20vh;
   background-color: #fff;
-  margin-bottom: 25vh;
+  margin-bottom: 5vh;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -57,8 +57,12 @@ footer {
   background: linear-gradient(
     90deg,
     rgba(250, 199, 12, 1) 0%,
-    rgba(254, 216, 80, 1) 100%
+    rgba(254, 216, 80, 1) 40%,
+    rgba(254, 216, 80, 1) 600%,
+    rgba(250, 199, 12, 1) 100%
   );
+  background-size: 200% 200%;
+  animation: movingGradient 5s linear infinite alternate;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -80,7 +84,14 @@ footer {
 }
 
 .logo {
-  width: 10rem;
+  width: 15rem;
+}
+
+.mainLogo {
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  -webkit-text-stroke: 1px white;
 }
 
 .btn-personal {
@@ -101,15 +112,28 @@ footer {
 }
 
 .header__menu {
-  min-height: 20vh;
+  min-height: 10vh;
   background: rgb(250, 199, 12);
   background: linear-gradient(
     90deg,
     rgba(250, 199, 12, 1) 0%,
-    rgba(254, 216, 80, 1) 100%
+    rgba(254, 216, 80, 1) 40%,
+    rgba(254, 216, 80, 1) 60%,
+    rgba(250, 199, 12, 1) 100%
   );
+  background-size: 200% 200%;
+  animation: movingGradient 5s linear infinite alternate;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-  margin-bottom: 25vh;
+  margin-bottom: 5vh;
+}
+
+@keyframes movingGradient {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 /* Main */
@@ -238,6 +262,10 @@ footer {
   box-shadow: 0 0 5px 2px var(--yellow);
 }
 
+.main__contacto {
+  margin-bottom: 7vh;
+}
+
 /* Media */
 @media screen and (max-width: 359px) {
   .main__404--p {
@@ -259,6 +287,23 @@ footer {
 @media screen and (max-width: 668px) {
   .main__404--p {
     font-size: 1.5rem;
+  }
+
+  .main__promociones {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(148, 148, 148, 1) 40%,
+      rgba(80, 80, 80, 1) 60%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-size: 200% 200%;
+    animation: movingGradient 5s linear infinite alternate;
   }
 
   #section__ustedes {
