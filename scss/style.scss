@@ -1,0 +1,98 @@
+@mixin transitionBackground($gradient-color) {
+  background: $gradient-color;
+  background-size: 200% 200%;
+  animation: movingGradient 5s linear infinite alternate;
+
+  @keyframes movingGradient {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+// Escribiendo el mixin el la parte superior, me funciona en todos los archivos.
+
+@import "./variables";
+@import "./medias_queries";
+@import "./header";
+@import "./main";
+@import "./menu";
+@import "./promociones";
+@import "./ustedes";
+@import "./contacto";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Oswald:wght@300;400;600&family=Roboto:wght@900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: $title-size;
+}
+
+p,
+ol,
+ul,
+button,
+input,
+a {
+  font-family: "Merriweather", serif;
+  font-size: $paragraph-size;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../Imagenes/Background.jpg);
+  backdrop-filter: brightness(0.5);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 20%;
+}
+
+header {
+  min-height: 100vh;
+  background-color: #00000010;
+}
+
+main {
+  padding: 0 20vh;
+  background-color: $white-color;
+  margin-bottom: 5vh;
+  @extend .box-shadow;
+}
+
+footer {
+  @extend .box-shadow;
+  min-height: 20vh;
+  @include transitionBackground($gradient-main-color);
+}
+
+.redes_sociales {
+  max-width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px $white-color;
+  margin: 0 5px;
+}
+
+@include responsive(tablet) {
+  .div__hidden {
+    display: none;
+    position: absolute;
+  }
+}
+
+@include responsive(pc) {
+  .div__hidden {
+    display: none;
+    position: absolute;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}

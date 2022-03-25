@@ -1,0 +1,16 @@
+// Colores
+$main-color: #fac70c;
+$opposite-color: #ff6666;
+$black-color: #332a2d;
+$white-color: #fff8e5;
+$gradient-main-color: linear-gradient(
+  90deg,
+  rgba(250, 199, 12, 1) 0%,
+  rgba(254, 216, 80, 1) 40%,
+  rgba(254, 216, 80, 1) 60%,
+  rgba(250, 199, 12, 1) 100%
+);
+
+// Tamaños de fuente
+$title-size: 3rem;
+$paragraph-size: 1.2rem;

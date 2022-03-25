@@ -1,0 +1,45 @@
+.background {
+  min-height: 100vh;
+  background-image: url(../Imagenes/Background.jpg);
+  background-size: cover;
+  background-position: 15%;
+  background-attachment: fixed;
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.header__nav {
+  margin-left: 0;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.mainLogo {
+  font-size: $title-size + 2rem;
+  font-family: "Roboto", sans-serif;
+  color: $black-color;
+  -webkit-text-stroke: 1px $white-color;
+}
+
+.btn-personal {
+  background: $gradient-main-color;
+
+  &:hover {
+    box-shadow: 0 0 5px $main-color;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px $black-color inset;
+  }
+}
+
+.header__menu {
+  min-height: 10vh;
+  @include transitionBackground($gradient-main-color);
+  @extend .box-shadow;
+  margin-bottom: 5vh;
+}

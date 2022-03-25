@@ -1,0 +1,24 @@
+$gradient-grey: linear-gradient(
+  90deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(148, 148, 148, 1) 40%,
+  rgba(80, 80, 80, 1) 60%,
+  rgba(0, 0, 0, 1) 100%
+);
+
+.main__promociones {
+  background-color: $black-color;
+  @include responsive(tablet) {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    @include transitionBackground($gradient-grey);
+    background-size: 200% 200%;
+    animation: movingGradient 5s linear infinite alternate;
+  }
+}
+
+.promocion__carusel--font {
+  font-size: 2rem;
+  color: $white-color;
+}
