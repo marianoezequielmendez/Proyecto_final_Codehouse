@@ -25,21 +25,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./Favicon/apple-touch-icon.png"
+      href="../Favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./Favicon/favicon-32x32.png"
+      href="../Favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./Favicon/favicon-16x16.png"
+      href="../Favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./Favicon/site.webmanifest" />
+    <link rel="manifest" href="/Favicon/site.webmanifest" />
     <!-- Animaciones wow -->
     <link
       rel="stylesheet"
@@ -101,38 +101,57 @@
 
     <!-- Inicio del main -->
     <main class="row py-2 px-4 main__menu main__contacto">
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputText1" class="form-label">Nombre</label>
-          <input
-            type="text"
-            class="form-control contacto__input--shadow"
-            id="exampleInputText1"
-          />
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-12">
+            <h3 class="h1">Sobre nosotros</hh3>
+            <p class="mt-3">
+              MENDI nació en 2020 en el corazón de Virreyes siendo la primera hamburguesería con calidad premium de la zona.
+            </p>
+            <p>
+              La pasión por la comida se vive a diario en nuestro hogar, impulsada por el concepto de FastGood, que destaca lo rápido y bueno. La elaboración de productos con altos estándares de calidad, la mezcla de ingredientes frescos, caseros y procesos artesanales nos permiten brindar a nuestros clientes una experiencia única, para que disfruten de las mejores hamburguesas, fries, hotdogs, helados, limonadas, cervezas y vinos en un ambiente relajado y moderno, con la mejor música y atención personalizada.
+            </p>
+            <p>
+              Estamos abiertos a opionen, sugerencias, pedidos y todo lo que nos quieras comentar. Envianos lo que desees en el fómulario de contacto.
+            </p>
+            <img src="../Imagenes/Nosotros/Nosotros.jpg" class="rounded mx-auto d-block w-100" alt="Foto del equipo de Mendi Burger">
+          </div>
+          <form class="col-xl-6 col-lg-12 mt-5 d-flex align-self-center flex-column">
+            <div class="mb-3">
+              <label for="exampleInputText1" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control contacto__input--shadow"
+                id="exampleInputText1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control contacto__input--shadow"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputComentario1" class="form-label"
+                >Comentario</label
+              >
+              <textarea
+                name="exampleInputComentario1"
+                id="exampleInputComentario1"
+                class="form-control contacto__input--shadow"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-personal btn-lg">
+              Enviar
+            </button>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control contacto__input--shadow"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputComentario1" class="form-label"
-            >Comentario</label
-          >
-          <textarea
-            name="exampleInputComentario1"
-            id="exampleInputComentario1"
-            class="form-control contacto__input--shadow"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-personal btn-lg">Enviar</button>
-      </form>
+      </div>
     </main>
     <!-- Final del main -->
 

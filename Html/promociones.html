@@ -25,19 +25,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./Favicon/apple-touch-icon.png"
+      href="../Favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./Favicon/favicon-32x32.png"
+      href="../Favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./Favicon/favicon-16x16.png"
+      href="../Favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="./Favicon/site.webmanifest" />
     <!-- Animaciones wow -->
@@ -102,94 +102,120 @@
     </header>
 
     <!-- Inicio del main -->
-    <main class="row py-2 px-4 main__promociones">
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img
-              src="../Imagenes/Promos/Promo_01.jpg"
-              class="d-block w-100 rounded-3"
-              alt="Promoción 01"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="promocion__carusel--font">PROMO PAREJA</h5>
-              <p class="promocion__carusel--font">
+    <main class="row py-2 px-4 mb-5 main__promociones--height">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button btn-personal text-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Promo pareja 2x1 | Descubre más ->
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
                 Veni a compartir con la persona que más queres estas riquísimas
-                hamburguesas, y aprovecha nuestro 2X1
+                hamburguesas, y aprovecha nuestro 2X1. 😋
               </p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="../Imagenes/Promos/Promo_02.jpg"
-              class="d-block w-100 rounded-3"
-              alt="Promoción 02"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="promocion__carusel--font">PROMO AMIGOS</h5>
-              <p class="promocion__carusel--font">
-                50% en nuestros combos llenadores. ¿La bancas?
+              <p>
+                <small
+                  >Promoción disponible de Lunes a Jueves de 12 a 20 Hs.</small
+                >
               </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../Imagenes/Promos/Promo_03.jpg"
-              class="d-block w-100 rounded-3"
-              alt="Promoción 03"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="promocion__carusel--font">PROMO AL PASO</h5>
-              <p class="promocion__carusel--font">
-                Pasa y llevate esta increible hamburguesa por solo $4,25.
-              </p>
+              <img
+                src="../Imagenes/Promos/Promo_01.jpg"
+                class="img-fluid rounded-3"
+                alt="Promoción 01: 2X1 en tu combo"
+              />
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button btn-personal text-dark collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Promo Amigos | Descubre más ->
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Acercate con tus amigos para atacar a estas vestias de
+                hamburguesas... Van a poder? 🤔
+              </p>
+              <p>
+                <small
+                  >Promoción disponible de Viernes a Domingos de 12 a 20
+                  Hs.</small
+                >
+              </p>
+              <img
+                src="../Imagenes/Promos/Promo_02.jpg"
+                class="img-fluid rounded-3"
+                alt="Promoción 02: Promo amigos"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button btn-personal text-dark collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Promo del dia a solo $4.25 | Descubre más ->
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                No te quedes más con las ganas, vení y aprovecha este sumer
+                combo por solo $4.25.
+              </p>
+              <p>
+                <small
+                  >Promoción disponible de Lunes a Jueves de 12 a 20 Hs.</small
+                >
+              </p>
+              <img
+                src="../Imagenes/Promos/Promo_03.jpg"
+                class="img-fluid rounded-3"
+                alt="Promoción 03: Combo por solo $4.25"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- Final del main -->
