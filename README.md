@@ -21,4 +21,4 @@ Repositorio Github:
 https://github.com/marianoezequielmendez/Proyecto_final_Codehouse
 
 Deploy:
-https://marianoezequielmendez.github.io/Proyecto_final_Codehouse/
+https://marianoezequielmendez.github.io/Proyecto_final_Codehouse/index.html
